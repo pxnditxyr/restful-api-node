@@ -1,2 +1,7 @@
-const devName : string = 'Pxndxs';
-console.log( `Hello to this app created by ${ devName } - Dev` );
+import dotenv from 'dotenv';
+import { Server } from './models';
+
+dotenv.config();
+
+const server = new Server();
+server.listen();
