@@ -1,0 +1,24 @@
+{
+  "name": "restful-api",
+  "version": "0.0.1",
+  "description": "A base of a RESTful API",
+  "main": "./src/app.ts",
+  "scripts": {
+    "start": "node /dist/app.js",
+    "dev": "nodemon ./dist/app.js"
+  },
+  "keywords": [
+    "restful",
+    "rest",
+    "api",
+    "typescript",
+    "node",
+    "express",
+    "web"
+  ],
+  "author": "Pxndxs - Dev",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
