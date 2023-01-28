@@ -22,3 +22,4 @@ dist-ssr
 
 # environment
 /.env
+/package-lock.json

@@ -6,6 +6,7 @@ This is the initial setup for a RESTful API built with Node.js and TypeScript, i
 - Node.js
 - TypeScript (installed globally)
 - nodemon (installed globally)
+- Prisma
 
 ## Technologies
 - Node.js
@@ -13,6 +14,7 @@ This is the initial setup for a RESTful API built with Node.js and TypeScript, i
 - Express
 - Cors
 - Dotenv
+- Prisma
 
 ## Getting Started
 To get started, you will need to have Node.js installed on your machine. Once you have that set up, follow these steps:
@@ -66,6 +68,15 @@ npm start
 - You can use rest.nvim for testing. 
 - Go to the `example.http` file and run.
 
+### Database
+1.  Prisma is configured but without Schemes, to make it run you must add some Schemes
+Models: [Prisma Schema Documentation](https://www.prisma.io/docs/concepts/components/prisma-schema)
+2. To migrate run this commands
+```bash
+npx prisma migrate dev --name init
+npx prisma generate
+```
+
 ## Documentation
 For additional information on the technologies used in this project, please refer to the official documentation:
 - [Node.js](https://nodejs.org/en/docs/)
@@ -73,6 +84,7 @@ For additional information on the technologies used in this project, please refe
 - [Express](https://expressjs.com/en/starter/installing.html)
 - [Cors](https://www.npmjs.com/package/cors#installation)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Prisma](https://www.prisma.io/docs/getting-started/quickstart)
 
 ## License
 This project is licensed under the MIT license.
